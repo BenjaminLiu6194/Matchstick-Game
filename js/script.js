@@ -1,5 +1,5 @@
 let currentPlayer = 1;
-let numMatchsticks = parseInt(prompt("How many matchsticks do you want"));
+let numMatchsticks = parseInt(prompt("Welcome to the two player game- Matchsticks. There are N matches on the table initially. In each turn, current player picks 1, 2, or 3 matches from the table. The player who picks the last match on the table wins the game. Please Pick the total number of matchsticks:"));
 
 function drawMatchsticks(){
     $("#matchstick-container").empty()
@@ -27,7 +27,7 @@ $("#current-player").html(currentPlayer)
 
 $("#restart-game-btn").click(function() {
     currentPlayer = 1;
-    numMatchsticks = parseInt(prompt("How many matchsticks do you want?"));
+    numMatchsticks = parseInt(prompt("Please Pick the total number of matchsticks:"));
     updateText();
     drawMatchsticks();
 })

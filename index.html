@@ -24,25 +24,69 @@
            h1 {font-size: 4em;}
            h1 {font-family: Verdana, Geneva, Tahoma, sans-serif;}
            h1{ color:rgb(255, 0, 0)}
+           h1{margin-top: 2%;}
            p {text-align: center;}
            p {font-size: 2em;}
+           p{margin-left: 5%;}
+           p{margin-right: 5%;}
            label {text-align: center;}
            label {font-style: bold;}
            label {color: rgb(255, 0, 0); }
+           label {margin-left: 25%;}
+           .btn {
+             background-color: #ddd;
+             border: none;
+             color: black;
+             padding: 16px 32px;
+             text-align: center;
+             font-family:'Segoe UI';
+             font-size: 20px;
+             margin: 4px 2px;
+             transition: 0.3s;
+             height: 100px;
+}
+.madeby {
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+}
+.btn:hover {
+  background-color: #ebc700;
+  color: white;
+}
+.btn2 {
+             background-color: #ddd;
+             border: none;
+             color: black;
+             font-family:'Segoe UI';
+             width: 10%;
+             height: 30%;
+             font-size: 20px;
+             margin: 4px 2px;
+             transition: 0.3s;
+}
+.btn2:hover {
+  background-color: #ff4800;
+  color: white;
+}
+
+
+
        </style>
 
    </head> 
    <body>
+       <title>Matchstick Game! By RNGeses</title>
        <h1>Matchstick Game!!!</h1>
+       <h1 class = "madeby">Made by Team RNGesus</h1>
        <p>Matchstick is a two player game. There are N matches on the table initially. In each turn, current player picks 1, 2, or 3 matches from the table. The player who picks the last match on the table wins the game.</p>
        <div id= "matchstick-container"></div>
 
-       <p>Number of Matchstick: <span id="num-matchsticks"></span></p>
+       <p>Number of Matchstick(s) Left: <span id="num-matchsticks"></span></p>
        <p>Current player: <span id="current-player"></span></p>
        <label for="num-matchsticks-to-remove">Number of matchsticks to remove:</label>
        <input id="num-matchsticks-to-remove" min="1" max="3" type="number" />
-       <button type="button" id="submit-move-btn">Enter</button>
-       <button type="button" id ="restart-game-btn">Restart Game</button>
+       <button type="button" id="submit-move-btn" class="btn">Enter</button>
+       <button type="button" id ="restart-game-btn" class="btn2">Restart</button>
        <script src="js/jquery.js"></script>
        <script src="js/script.js"></script>
    </body>
